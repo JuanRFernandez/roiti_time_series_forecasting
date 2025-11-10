@@ -104,6 +104,9 @@ ENV/
 env.bak/
 venv.bak/
 
+# UV package manager
+uv.lock
+
 # Spyder project settings
 .spyderproject
 .spyproject
@@ -132,9 +135,14 @@ data/external/*
 !data/interim/.gitkeep
 !data/external/.gitkeep
 
-# Model files
-models/*
-!models/.gitkeep
+# Results and outputs
+results/*
+!results/.gitkeep
+*.png
+*.jpg
+
+# Temporary PowerPoint files
+~$*.pptx
 
 # IDE settings
 .vscode/
